@@ -1,3 +1,218 @@
-body{
-  background-color: #d1d1d1;
+p,
+body {
+  margin: 0;
+}
+
+.allwrap {}
+
+.cale-today,
+.month-wrap {
+  padding: 15px;
+  border-bottom: 2px #545252 solid;
+}
+
+/* .event-wrap {
+  max-height: 175px;
+} */
+
+.calewrap {
+  overflow: hidden;
+  background: #313131;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.current-time {
+  color: #fff;
+  font-size: 50px;
+  cursor: default;
+  font-weight: 100;
+}
+
+.current-month {
+  color: #22ac38;
+  font-size: 20px;
+  font-weight: 100;
+  cursor: default;
+}
+
+.month-switch {
+  height: 20px;
+  position: relative;
+}
+
+.present-month {
+  position: absolute;
+  left: 0;
+  color: #ddd;
+  font-size: 15px;
+  font-weight: 100;
+  cursor: default;
+}
+
+.page-switch {
+  position: absolute;
+  right: 0;
+}
+
+.page-switch div {
+  cursor: pointer;
+  display: inline-block;
+  color: #ddd;
+  user-select: none;
+}
+
+.page-pre {
+  margin-right: 10px;
+}
+
+.weekNav {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.weekNav li {
+  color: #ddd;
+  cursor: default;
+  display: inline-block;
+  padding: 0 18px;
+}
+
+.day-wrap ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.day-wrap ul li {
+  color: #888;
+  margin: 2px 1px;
+  /* outline: 1px #313131 solid; */
+  display: inline-block;
+  width: 50px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: default;
+}
+
+.day-wrap ul li:hover {
+  box-sizing: border-box;
+  outline: 2px #aaa solid;
+}
+
+.cur-m {
+  color: #ddd !important;
+}
+
+.today-has-task:after {
+  content: " •";
+  color: #fff;
+}
+
+.select-day{
+    outline: 2px #22ac38 solid !important;
+}
+.cur-today {
+  background: #22ac38;
+  font-weight: 600;
+}
+
+.event-wrap header {
+  position: relative;
+  height: 40px;
+}
+
+.present-day {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.event-add {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ddd;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.day-event-content {
+  height: 142px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  /* max-height: 175px; */
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.day-event-content li {
+  position: relative;
+  font-size: 18px;
+  line-height: 40px;
+  border-left: 6px #ff5722 solid;
+  padding-left: 15px;
+  margin: 10px 0;
+}
+
+.day-event-content li span {
+  font-weight: 100;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+}
+
+.day-event-content li span:hover {
+  cursor: pointer;
+}
+
+.task-text-input {
+  outline: none;
+  padding-left: 10px;
+  height: 30px;
+  width: 250px;
+  border: none;
+}
+
+.add-task-del {
+  right: 20px;
+}
+
+.add-task-ok,
+.add-task-finish,
+.add-task-withdraw {
+  right: 50px !important;
+}
+
+.day-event-content li:hover {
+  background: #555;
+}
+
+.todo-finish {
+  border-left: 6px #00ff28 solid !important;
+  /* color: #aaa; */
+  background: #555;
+}
+
+
+.day-event-content::-webkit-scrollbar {
+  width: 1px;
+  height: 16px;
+}
+
+.day-event-content::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.day-event-content::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 20px;
+  border-radius: 10px;
 }

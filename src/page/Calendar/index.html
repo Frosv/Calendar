@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calendar</title>
+  <!-- <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css"> -->
 </head>
+
 <body>
-  
+  <div class="allwrap">
+    <main class="calewrap">
+      <header id="caleToday" class="cale-today">
+        <p class="current-time" id="currentTime">--:--:--</p>
+        <p class="current-month" id="currentMonth">2017年7月26日</p>
+      </header>
+      <nav id="monthWrap" class="month-wrap">
+        <header class="month-switch">
+          <span id="presentMonth" class="present-month">2017年7月</span>
+          <div class="page-switch" id="pageSwitch">
+            <div id="pagePre" class="page-pre">︿</div>
+            <div id="pageNext" class="page-next">﹀</div>
+          </div>
+        </header>
+        <ul class="weekNav">
+          <li>一</li>
+          <li>二</li>
+          <li>三</li>
+          <li>四</li>
+          <li>五</li>
+          <li>六</li>
+          <li>日</li>
+        </ul>
+        <main id="dayWrap" class="day-wrap">
+          <ul id="dayUl">
+            <!-- <li>26</li>
+            <li class="cur-m">1</li> -->
+          </ul>
+        </main>
+      </nav>
+      <div id="eventWrap" class="event-wrap">
+        <header>
+          <div id="presentDay" class="present-day">今天</div>
+          <span id="dayEventAdd" class="event-add">+</span>
+        </header>
+        <ul id="dayEventcontent" class="day-event-content">
+          <!-- <li>
+            <input type="text" placeholder="请在此输入" class="task-text-input" name="taskText" id="task201707271009">
+            <span data-type="ok" data-id="201707271009" class="add-task-ok">✓</span>
+            <span data-type="del" data-id="201707271009" class="add-task-del">✗</span>
+          </li>
+          <li id="task201707271109">吃饭
+            <span data-type="finish" data-id="201707271109" class="add-task-finish">✓</span>
+            <span data-type="del" data-id="201707271109" class="add-task-del">✗</span>
+          </li>
+          <!-- <li>睡觉</li> -->
+          <li id="task201707271069" class="todo-finish">打豆豆
+            <span data-type="withdraw" data-id="201707271069" class="add-task-withdraw">ð</span>
+            <span data-type="del" data-id="201707271069" class="add-task-del">✗</span>
+          </li>
+          <li id="task201707271369">睡觉</li> -->
+        </ul>
+      </div>
+    </main>
+  </div>
+  <!-- <script src="./cale.js"> -->
+  </script>
 </body>
+
 </html>
